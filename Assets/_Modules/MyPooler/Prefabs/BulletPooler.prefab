@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5333877599720191991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7420738750345558090}
+  - component: {fileID: 5069839212494138196}
+  m_Layer: 0
+  m_Name: BulletPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7420738750345558090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5333877599720191991}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5069839212494138196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5333877599720191991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008cfb7e5235b104ab694a4bab1e66da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDebug: 0
+  shouldDestroyOnLoad: 1
+  pools:
+  - tag: ArrowLv1
+    prefab: {fileID: 5235024160992578241, guid: 819950264cfae1746bfb20802f436c27, type: 3}
+    amount: 10
+    shouldExpandPool: 1
+    extensionLimit: 0
+  - tag: ArrowLv2
+    prefab: {fileID: 5235024160992578241, guid: db2c943bbcac2514b80becffdf71553a, type: 3}
+    amount: 10
+    shouldExpandPool: 1
+    extensionLimit: 0
+  - tag: ArrowLv3
+    prefab: {fileID: 5235024160992578241, guid: f9f188f92c73516438126ad9d8ccbad6, type: 3}
+    amount: 10
+    shouldExpandPool: 1
+    extensionLimit: 0
+  - tag: ArrowLv4_A
+    prefab: {fileID: 5235024160992578241, guid: e3c83f83ea269b9448f87d5caa98a0c4, type: 3}
+    amount: 10
+    shouldExpandPool: 1
+    extensionLimit: 0
+  - tag: ArrowLv4_B
+    prefab: {fileID: 5235024160992578241, guid: d3348e8e0225cd647a3098c39f43704a, type: 3}
+    amount: 10
+    shouldExpandPool: 1
+    extensionLimit: 0
+  - tag: CannonBallLv1
+    prefab: {fileID: 2323607493645030692, guid: 31b46ae1a6ae69d48b110b9b25be5614, type: 3}
+    amount: 10
+    shouldExpandPool: 1
+    extensionLimit: 0
